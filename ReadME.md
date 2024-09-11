@@ -10,10 +10,6 @@ This is a Python-based Real-Time Face Recognition system using OpenCV, dlib, and
 - **Face Deletion**: Allows the user to delete saved known faces from the system.
 - **Conditional Formatting in Excel**: Marks unrecognized faces in red and creates hyperlinks to saved images.
 
-## Project Structure
-
-|-- camshots/ # Directory for saving webcam images |-- known_faces.npy # Numpy file storing face encodings of known faces |-- known_names.npy # Numpy file storing names of known faces |-- recognition_log.xlsx # Excel file to log recognized faces with timestamps |-- shape_predictor_68_face_landmarks.dat # Dlib model for face landmarks detection |-- dlib_face_recognition_resnet_model_v1.dat # Dlib face recognition model |-- main.py # Main file to run the face recognition system
-
 ## Installation
 
 1. Clone this repository:
