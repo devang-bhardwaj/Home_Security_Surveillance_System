@@ -6,13 +6,14 @@ import os
 from tqdm import tqdm
 import pandas as pd
 from datetime import datetime
+## Step 1: Save face encodings only for new names
 
 camshots_folder = "camshots"
 if not os.path.exists(camshots_folder):
     os.makedirs(camshots_folder)
     
 # Initialize Face Detection and Recognition Models
-print("Initializing Face Detection and Recognition Models")
+print("Initializing Face Detection and Recognition Models") 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 shape_predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 face_recognizer = dlib.face_recognition_model_v1("dlib_face_recognition_resnet_model_v1.dat")
